@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_bg"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.45"
+        android:baselineAligned="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.95"
+            android:orientation="vertical" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.10"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:baselineAligned="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtDetailServoName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Servo DS 3228 BB, MG"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Technische Daten:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.30"
+                            android:baselineAligned="true"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• Gewicht:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoGewicht"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="22 g"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• Grösse:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoGrosse"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="30x20x10 mm"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• Getriebe:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoGetriebe"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="kunststoff/CArbonitgetriebe"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• Lagerung:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoLaugerung"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="Gleitlarger"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• HV-Servo:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoHV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="Nein"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• Brushless:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoBrushless"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="Nein"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• Artikelnummer:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoItemNumber"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="5187"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="horizontal" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="• UVP:"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="5dp"
+                                        android:text="5187"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.70"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp" >
+
+                            <ImageView
+                                android:id="@+id/servoImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:baselineAlignBottom="true"
+                                android:clickable="true"
+                                android:onClick="imageClick"
+                                android:scaleType="fitEnd" />
+
+                            <ImageView
+                                android:id="@+id/zoomIcon"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:clickable="true"
+                                android:onClick="imageClick"
+                                android:scaleType="fitEnd"
+                                android:src="@drawable/icon01" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Leistungsdaten:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="true"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="true"
+                            android:orientation="vertical"
+                            android:paddingRight="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="• Stellmomente:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="• Haltemomente:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="• Stellzeiten:"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#000000"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="true"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoStellemomente4_8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="300 N/cm bei 4,8 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoHaltemomente4_8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="300 N/cm bei 4,8 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailStellzeiten4_8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.189 sec bei 4,8 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/verticalSeparator1"
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#d1383b" >
+                                </View>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoStellemomente6_0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="30 N/cm bei 6,0 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoHaltemomente6_0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="30 N/cm bei 6,0 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailStellzeiten6_0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.18 sec bei 6,0 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/verticalSeparator2"
+                                    android:layout_width="1dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:background="#d1383b" >
+                                </View>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:baselineAligned="true"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoStellemomente7_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="30 N/cm bei 7,4 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailServoHaltemomente7_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="30 N/cm bei 7,4 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtDetailStellzeiten7_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.18 sec bei 7,4 Volt"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#000000"
+                                        android:textSize="10sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Beschreibung:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDetailText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Besonders geeignet für kleine Hochleistungsmodelle als Flächenservo zur direkten Anlenkung von Querrudern in Tragflächen, z.B. Mini-F3B- und Elektro-Flugmodellen, bei denen hohe Schockfestigkeit und geringe Abmessungen bei minimalem Gewicht gefordert sind."
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.95"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+    </View>
+
+    <include layout="@layout/right_column" />
+
+</LinearLayout>

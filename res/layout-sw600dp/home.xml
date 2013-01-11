@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraLayoutMiddleColumn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.45"
+        android:baselineAligned="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.70" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.90"
+            android:baselineAligned="true"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Du kannst jetzt das passende Graupner Servo deinen gewünschten Eigenschaften entsprechend auswählen:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFilters"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.60"
+            android:baselineAligned="true" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFiltersLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.51"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.90" />
+
+                <Button
+                    android:id="@+id/btn_grosse"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/button_style"
+                    android:gravity="left|center_vertical"
+                    android:onClick="selectGrosse"
+                    android:paddingLeft="10dp"
+                    android:text="Maximale Breite"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_haltemoment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/button_style"
+                    android:gravity="left|center_vertical"
+                    android:onClick="selectStellzeit"
+                    android:paddingLeft="10dp"
+                    android:text="Stellzeit"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_LagerungGetriebe"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/button_style"
+                    android:gravity="left|center_vertical"
+                    android:onClick="selectLagerungGetriebe"
+                    android:paddingLeft="10dp"
+                    android:text="Lagerung/Getriebe"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineraLayoutLeftColumn4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.98"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFiltersRight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.51"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.90" />
+
+                <Button
+                    android:id="@+id/btn_gewicht"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/button_style"
+                    android:gravity="left|center_vertical"
+                    android:onClick="selectGewicht"
+                    android:paddingLeft="10dp"
+                    android:text="Maximales Gewicht"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_stellmoment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/button_style"
+                    android:gravity="left|center_vertical"
+                    android:onClick="selectStellmoment"
+                    android:paddingLeft="10dp"
+                    android:text="@string/btn_stellmoment"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_HVBrushless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/button_style"
+                    android:gravity="left|center_vertical"
+                    android:onClick="selectHVBrushless"
+                    android:paddingLeft="10dp"
+                    android:text="HV/Brushless"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.80"
+            android:gravity="right"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBottomButtons"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="gotoImpressum"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Rechtliche Hinweise / Impressum"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:onClick="gotoFaceBook"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fb_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.75"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:onClick="gotoResults"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icon01" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="50dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:onClick="resetAllValues"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icon03" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraLayoutLeftColumn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <include layout="@layout/right_column" />
+
+</LinearLayout>

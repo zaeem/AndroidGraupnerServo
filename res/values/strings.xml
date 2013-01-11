@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Graupner Servo</string>
+    <string name="txt_search">Suche nach Artikelnummer</string>
+    <string name="btn_stellmoment">Stellmoment</string>
+    <string name="main_no_items">No Servos to display</string>
+</resources>

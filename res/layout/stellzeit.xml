@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraLayoutMiddleColumn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.45"
+        android:baselineAligned="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.70" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFilters"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.50"
+            android:baselineAligned="true" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFiltersRight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtStellzeit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="3dp"
+                    android:text="Du kannst jetzt direkt die gewünschte Stellzeit deines Servos eingeben (Beispiel: 0,12):"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.87" >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.40"
+                        android:hint="Suche nach Stellzeit"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:digits="0123456789,"
+                        android:singleLine="true"
+                        android:textSize="10sp" >
+                        <requestFocus />
+                    </AutoCompleteTextView>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.60"
+                        android:paddingLeft="10dp" >
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:clickable="true"
+                            android:onClick="selectValue"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/icon02" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="true"
+                            android:onClick="unSelectValue"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/icon03" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.92"
+            android:gravity="right" >
+        </LinearLayout>
+
+        <include layout="@layout/footer1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraLayoutLeftColumn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraLayoutRightColumn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.65"
+        android:gravity="right"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

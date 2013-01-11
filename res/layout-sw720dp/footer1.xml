@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutBottomButtons"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.88"
+    android:gravity="bottom" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="gotoImpressum"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:text="Rechtliche Hinweise / Impressum"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:onClick="gotoFaceBook"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fb_logo" />
+
+</LinearLayout>
